@@ -1,0 +1,76 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "develop"
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": []
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "all": true
+      },
+      "performance": {
+        "all": true
+      },
+      "security": {
+        "all": true
+      },
+      "complexity": {
+        "all": true,
+        "noForEach": "off"
+      },
+      "correctness": {
+        "all": true,
+        "noNodejsModules": "off"
+      },
+      "nursery": {
+        "noCommonJs": "off",
+        "noDuplicatedFields": "error",
+        "noDuplicateElseIf": "error",
+        "noEnum": "warn",
+        "noExportedImports": "error",
+        "noNestedTernary": "error",
+        "noOctalEscape": "error",
+        "noIrregularWhitespace": "error",
+        "noSecrets": "warn",
+        "noTemplateCurlyInString": "error",
+        "noSubstr": "error",
+        "useConsistentCurlyBraces": "error",
+        "useTrimStartEnd": "error",
+        "useGuardForIn": "error",
+        "useComponentExportOnlyModules": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingCommas": "all",
+      "jsxQuoteStyle": "double",
+      "semicolons": "always",
+      "bracketSpacing": true,
+      "quoteProperties": "asNeeded"
+    }
+  },
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  }
+}
